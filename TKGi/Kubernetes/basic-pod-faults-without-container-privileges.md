@@ -1,20 +1,20 @@
 ### State Manipulation Chaos
 
-- pod-delete
+- Pod Delete
 
 ### Scale Chaos
 
-- pod-autoscaler
+- Pod Autoscaler
 
 ### Resource Exhaustion Chaos
 
-- pod-cpu-hog-exec
-- pod-memory-hog-exec
+- Pod CPU Hog (via Exec)
+- Pod Memory Hog (via Exec)
 
 ### Network Manipulation Chaos
 
-- pod-network-partition
+- Pod Network Partition
 
 ### Load Chaos
 
-- locust-loadgen
+- Locust Loadgen
