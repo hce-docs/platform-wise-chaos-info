@@ -7,7 +7,9 @@
 
 ### PCF App State Manipulation Chaos
 
-- App Stop 
+- App Stop
+- App Route Unmap
+- App Unbind Service
 
 ### System Resource Exhaustion Chaos
 
