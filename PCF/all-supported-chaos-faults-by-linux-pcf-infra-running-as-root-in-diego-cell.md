@@ -17,6 +17,7 @@
 
 - App Stop 
 - App Instance / Container Kill
+- App Route Unmap
 
 ### System Resource Exhaustion Chaos
 
