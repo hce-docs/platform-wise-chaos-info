@@ -35,6 +35,7 @@
 ### Scale Chaos
 
 - Pod Scale
+- Kubelet Density
 
 ### Resource Exhaustion Chaos
 
@@ -50,12 +51,19 @@
 - Pod Network Duplication
 - Pod Network Corruption
 - Pod Network Partition
+- Node Network Latency
+- Node Network Loss
 
 ### Filesystem I/O Chaos
 
 - Pod IO Error
 - Pod IO Latency
 - Pod IO Attribute Override
+
+### Kubernetes Platform Services Chaos
+
+- Kubelet Service Kill
+- Container Runtime Service Kill
 
 ### DNS Chaos
 
