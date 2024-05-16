@@ -1,8 +1,12 @@
-### State Manipulation Chaos
+*Note: Assumes the vCenter user access for the experiments is equal to or greater than what is laid out [here](https://github.com/hce-docs/platform-wise-chaos-info/blob/main/VMware/vcenter-based-chaos-user-access-requirements.md)*
 
-- Process Kill
-- Service Stop 
+### VM State Manipulation Chaos
 
-### Resource Utilization Chaos 
+- VM Poweroff
+- VM Process Kill (provided the process is itself not running as administrator)
+- VM Service Stop
+- VM Disk Loss
 
-- CPU Stress
+### VM Resource Stress Chaos
+
+- VM CPU Hog
