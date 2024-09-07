@@ -3,13 +3,13 @@
 ### VM HTTP/API Manipulation Chaos 
 
 - VM HTTP Latency
-  -  *Injects latency into the response for all {http(s)-based} service requests coming in (i.e., ingress) on a specific port in a desired VM.* 
+  -  *Injects latency into the response for all {http(s)-based} service requests coming in (i.e., ingress) on a specific port in a desired VM. Restores standard service traffic characteristics after the chaos duration* 
     
 - VM HTTP Response Modify
-  - *Injects custom response (status codes, body or headers) for all {http(s)-based} service requests coming in (i.e., ingress) on a specific port in a desired VM.*
+  - *Injects custom response (status codes, body or headers) for all {http(s)-based} service requests coming in (i.e., ingress) on a specific port in a desired VM. Restores standard service response after the chaos duration*
     
 - VM HTTP Reset Peer
-  - *Resets/drops the TCP connection for service requests coming in (i.e., ingress) on a specific port in a desired VM to generate the error "connection reset by peer" on the client.* 
+  - *Resets/drops the TCP connection for service requests coming in (i.e., ingress) on a specific port in a desired VM to generate the error "connection reset by peer" on the client. Restores standard service traffic characteristics after the chaos duration* 
 
 ### VM State Manipulation Chaos
 
