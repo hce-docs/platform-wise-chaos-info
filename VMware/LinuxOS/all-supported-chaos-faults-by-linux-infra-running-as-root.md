@@ -24,16 +24,16 @@
 ### API Chaos 
 
 - API Latency
-  - *Injects the desired latency into specific API requests (made to another service, i.e., egress) or response (for requests coming in on a specific port i.e., ingress) on the baremetal/VM, the API being identified via path/route filters.*
+  - *Injects the desired latency into specific API requests (made to another service, i.e., egress) or response (for requests coming in on a specific port i.e., ingress) on the baremetal/VM, the API being identified via path/route filters. Restores standard API  characteristics after the chaos duration*
     
 - API Block
-  - *Blocks specific API requests (made to another service, i.e., egress) or response (for requests coming in on a specific port i.e., ingress) on the baremetal/VM, the API being identified via path/route filters.*
+  - *Blocks specific API requests (made to another service, i.e., egress) or response (for requests coming in on a specific port i.e., ingress) on the baremetal/VM, the API being identified via path/route filters. Unblocks these API requests after the chaos duration*
   
 - API Response Status/Body/Header Modification
-  - *Changes the response status code, body, or header with desired values for specific APIs on the baremetal/VM, the API being identified via path/route filters.*
+  - *Changes the response status code, body, or header with desired values for specific APIs on the baremetal/VM, the API being identified via path/route filters. Restores standard API response after the chaos duration*
     
 - API Request Header/Body Modification
-  - *Changes the request header or body with desired values for specific APIs on the baremetal/VM, the API being identified via path/route filters.*
+  - *Changes the request header or body with desired values for specific APIs on the baremetal/VM, the API being identified via path/route filters. Restores standard API requests after the chaos duration*
 
 ### State Manipulation Chaos
 
@@ -68,13 +68,13 @@
 ### DNS Chaos
 
 - DNS Error
-  - *Injects DNS resolution errors for specific domains/hosts on the baremetal/VM*
+  - *Injects DNS resolution errors for specific domains/hosts on the baremetal/VM for the given chaos duration*
     
 - DNS Spoof
-  - *Redirects the traffic to specific domains/hosts/service endpoints from the baremetal/VM, to a desired endpoint (often, an instrumented version of the service or a stub)*
+  - *Redirects the traffic to specific domains/hosts/service endpoints from the baremetal/VM, to a desired endpoint (often, an instrumented version of the service or a stub) for the given chaos duration*
 
 ### Time Chaos
 
 - Time Drift
-  - *Changes the system time by adding an offset, which is specified in a (+/-)[numeric-hours]h[numeric-minutes]m[numeric-seconds]s format*
+  - *Changes the system time by adding an offset, which is specified in a (+/-)[numeric-hours]h[numeric-minutes]m[numeric-seconds]s format for the given chaos duration*
 
