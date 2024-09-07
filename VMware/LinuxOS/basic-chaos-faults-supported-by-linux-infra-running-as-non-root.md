@@ -37,4 +37,5 @@
 ### State Manipulation Chaos
 
 - Process Kill
+  
   - *Kills a desired process in the baremetal/VM, the process being identified either by name, ID or via process ID derivation command. Allows optional re-creation of the process via EoT (end-of-test) command hooks.*
