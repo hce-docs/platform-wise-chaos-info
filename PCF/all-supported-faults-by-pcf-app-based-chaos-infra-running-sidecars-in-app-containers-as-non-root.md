@@ -30,4 +30,4 @@
   - *Hogs the desired number of CPU cores/load percentage within the PCF app instances via a stress utility, thereby depriving the application processes of CPU resources. Withdraws the stress action and releases CPU cycles after the chaos duration*
   
 - App Instance Memory Stress
-  *Hogs the available free memory in the PCF app instances via a stress utility to simulate memory pressure/leaks. Withdraws the stress action and releases memory after the chaos duration*
+  - *Hogs the available free memory in the PCF app instances via a stress utility to simulate memory pressure/leaks. Withdraws the stress action and releases memory after the chaos duration*
