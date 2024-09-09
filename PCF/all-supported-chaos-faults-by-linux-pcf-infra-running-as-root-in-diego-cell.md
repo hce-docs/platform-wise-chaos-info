@@ -49,7 +49,13 @@
 ### Network Manipulation Chaos
 
 - App Instance Network Latency
-  - *Injects the desired latency into a given PCF app instance's Network traffic for a specific interface, via a traffic-shaping utility. Simulates degraded/slow networks. Restores network characteristics after the chaos duration.*
+  - *Injects the desired latency into a given PCF app instance's Network traffic, via a traffic-shaping utility. Simulates degraded/slow networks. Restores network characteristics after the chaos duration.*
+    
 - App Instance Network Packet Loss
-- App Instance Network Packet Duplication
+  - *Injects the desired packet drop percentage into the PCF app instance's Network traffic, via a traffic-shaping utility. This fault can be used to simulate blackhole and split-brain conditions. Restores network characteristics after the chaos duration.*
+    
 - App Instance Network Packet Corruption
+  - *Injects the desired packet corruption percentage into the PCF app instance's Network traffic, via a traffic-shaping utility. This fault can be used to test application stability while dealing with corrupted data over the network. Restores network characteristics after the chaos duration.*
+    
+- App Instance Network Packet Duplication
+  - *Injects the desired packet duplication percentage into the PCF app instance's Network traffic, via a traffic-shaping utility. Restores network characteristics after the chaos duration.*
